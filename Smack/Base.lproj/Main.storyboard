@@ -45,7 +45,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5g-bH-heU">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5g-bH-heU" customClass="GradientView" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPP-k4-3Pq">
@@ -71,6 +71,14 @@
                                     <constraint firstItem="ZuS-rP-Hh2" firstAttribute="centerX" secondItem="d5g-bH-heU" secondAttribute="centerX" id="fK0-VU-Q22"/>
                                     <constraint firstItem="TPP-k4-3Pq" firstAttribute="leading" secondItem="d5g-bH-heU" secondAttribute="leading" constant="12" id="wpa-j0-Nek"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                        <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                        <color key="value" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJN-mi-Fkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797" y="541"/>
+            <point key="canvasLocation" x="706" y="692"/>
         </scene>
         <!--ChannelVC-->
         <scene sceneID="jo5-qA-9Tj">
@@ -201,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pk4-O0-CFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797.60000000000002" y="-168.6656671664168"/>
+            <point key="canvasLocation" x="705" y="-43"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="0kW-cB-2eS">
@@ -218,13 +226,18 @@
                                     <action selector="closeButtonPressed:" destination="H0L-DA-ZIB" eventType="touchUpInside" id="Gyp-C0-6iq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOM-Ki-xWg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOM-Ki-xWg" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="282" width="300" height="33"/>
                                 <color key="backgroundColor" red="0.13903428100000001" green="0.098375059380000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clh-tl-4wT">
                                 <rect key="frame" x="37.5" y="315" width="300" height="30"/>
@@ -334,13 +347,21 @@
                                     <action selector="cloaseButtonPressed:" destination="iug-UI-wgH" eventType="touchUpInside" id="P9Y-8w-tqk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYv-51-wYs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYv-51-wYs" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="604" width="300" height="33"/>
                                 <color key="backgroundColor" red="0.13903428100000001" green="0.098375059380000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Create">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccountButtonPressed:" destination="iug-UI-wgH" eventType="touchUpInside" id="ykJ-Cq-N0l"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJe-FK-tnW">
                                 <rect key="frame" x="137.5" y="320" width="100" height="130"/>
@@ -350,6 +371,9 @@
                                 <state key="normal" title="Choose avatar">
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="chooseAvatarButtonPressed:" destination="iug-UI-wgH" eventType="touchUpInside" id="ncQ-tV-qmW"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="4go-NO-Z1C">
                                 <rect key="frame" x="38" y="143" width="300" height="127"/>
@@ -426,6 +450,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountButtonPressed:" destination="H0L-DA-ZIB" eventType="touchUpInside" id="kbI-Lm-IYd"/>
+                                    <action selector="generateBGColorButtonPressed:" destination="iug-UI-wgH" eventType="touchUpInside" id="aRx-5b-5El"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -452,6 +477,10 @@
                         <viewLayoutGuide key="safeArea" id="etX-Cj-vN0"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="TUB-Zx-ODx" id="XVy-lt-t4C"/>
+                        <outlet property="passwordTextField" destination="z2b-pB-A5b" id="ayw-V0-VSv"/>
+                        <outlet property="userImageView" destination="bua-tC-evs" id="orc-cQ-oCL"/>
+                        <outlet property="usernameTextField" destination="AOn-JE-aTj" id="E7H-Da-uph"/>
                         <segue destination="ovM-TP-sIn" kind="unwind" identifier="unwindToChannel" unwindAction="preapreForUnwindWithSegue:" id="esh-cv-bEC"/>
                     </connections>
                 </viewController>
@@ -459,20 +488,6 @@
                 <exit id="ovM-TP-sIn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2660" y="-170.46476761619192"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="AVR-o3-s1N">
-            <objects>
-                <viewController id="ES9-Ml-xgw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xG9-To-fug">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="XAp-2h-Ep1"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NYU-c4-7AA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>
