@@ -16,9 +16,16 @@ let URL_REGISTER = "\(BASE_URL)/account/register"
 let URL_LOGIN = "\(BASE_URL)/account/login"
 let URL_USER_ADD = "\(BASE_URL)/user/add"
 
+//Colors
+let smackPurplePlaceholder = UIColor.purple
+
+//Notification
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name(rawValue: "notificationUserDataChanged")
+
 //Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
+let TO_AVATAR_PICKER = "toAvatarPicker"
 let UNWIND = "unwindToChannel"
 
 //User Default
