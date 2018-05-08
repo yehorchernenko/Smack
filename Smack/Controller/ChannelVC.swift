@@ -13,14 +13,18 @@ class ChannelVC: UIViewController {
     //MARK: - Outlets
     @IBOutlet weak var loginButton: UIButton!
     @IBAction func preapreForUnwind(segue: UIStoryboardSegue){}
-
     @IBOutlet weak var userImageView: CircleImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
         NotificationCenter.default.addObserver(self, selector: #selector(userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupUserInfo()
+    }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         if AuthService.instance.isLoggedIn{
@@ -34,6 +38,10 @@ class ChannelVC: UIViewController {
     }
     
     @objc func userDataDidChange(_ notif: Notification){
+        setupUserInfo()
+    }
+    
+    func setupUserInfo(){
         if AuthService.instance.isLoggedIn{
             loginButton.setTitle(UserDataService.instance.name, for: .normal)
             userImageView.image = UIImage(named: UserDataService.instance.avatarName)
@@ -41,6 +49,7 @@ class ChannelVC: UIViewController {
         } else {
             loginButton.setTitle("Login", for: .normal)
             userImageView.backgroundColor = UIColor.clear
+            userImageView.image = UIImage(named: "menuProfileIcon")
         }
     }
 }
