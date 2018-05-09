@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743827E020A2F95B00132DFE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743827DF20A2F95B00132DFE /* Message.swift */; };
 		745DF02F209A2CCD00A014C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745DF02E209A2CCD00A014C7 /* AppDelegate.swift */; };
 		745DF034209A2CCD00A014C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745DF032209A2CCD00A014C7 /* Main.storyboard */; };
 		745DF039209A2CCD00A014C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745DF037209A2CCD00A014C7 /* LaunchScreen.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		743827DF20A2F95B00132DFE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		745DF02B209A2CCD00A014C7 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		745DF02E209A2CCD00A014C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		745DF033209A2CCD00A014C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				7460787020A1C35600657F2C /* Channel.swift */,
+				743827DF20A2F95B00132DFE /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				745DF04D209A339600A014C7 /* ChannelVC.swift in Sources */,
 				74607864209DE0E300657F2C /* AvatarPickerVC.swift in Sources */,
 				745DF05F209DB10600A014C7 /* RoundedButton.swift in Sources */,
+				743827E020A2F95B00132DFE /* Message.swift in Sources */,
 				7460787120A1C35600657F2C /* Channel.swift in Sources */,
 				74607868209DF05600657F2C /* CircleImage.swift in Sources */,
 				7460786F20A1C32400657F2C /* MessageService.swift in Sources */,

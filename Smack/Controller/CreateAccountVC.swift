@@ -77,6 +77,7 @@ class CreateAccountVC: UIViewController {
                         
                         AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { success in
                             
+                            print("User created")
                             if success{
                                 self.spinner.isHidden = true
                                 self.spinner.stopAnimating()
